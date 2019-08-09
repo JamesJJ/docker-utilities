@@ -10,7 +10,7 @@ CMD sleep 365d
 
 RUN \
   apt-get update \
-  apt-get upgrade -y \
+  && apt-get upgrade -y \
   && apt-get install -y \
     curl \
     ca-certificates \
