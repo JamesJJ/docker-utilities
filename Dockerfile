@@ -20,4 +20,6 @@ RUN \
   && curl -fsS --max-time 120 -o "/usr/bin/hey" https://storage.googleapis.com/hey-release/hey_linux_amd64 \
   && chmod 755 "/usr/bin/hey"
 
+COPY ./scripts /opt/scripts
+
 
