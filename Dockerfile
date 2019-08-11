@@ -14,6 +14,9 @@ RUN \
   && apt-get install -y \
     curl \
     ca-certificates \
+    python3 \
+    python3-pip \
+  && pip3 install ruamel.yaml \
   && curl -fsS --max-time 120 -o "/usr/bin/hey" https://storage.googleapis.com/hey-release/hey_linux_amd64 \
   && chmod 755 "/usr/bin/hey"
 
