@@ -8,6 +8,8 @@ LABEL base_image=$BASE_IMAGE
 
 CMD sleep 365d
 
+ENV PYTHONIOENCODING=utf-8:surrogateescape
+
 RUN \
   apt-get update \
   && apt-get upgrade -y \
