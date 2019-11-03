@@ -14,6 +14,7 @@ image_new = sys.argv[2]
 with YAML(output=sys.stdout) as yaml:
     yaml.explicit_start = True
     yaml.allow_unicode = True
+    yaml.width = 300
     for data in yaml.load_all(sys.stdin):
         if data is not None:
             if (data['kind'] == 'Deployment'):
